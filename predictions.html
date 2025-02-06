@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Patient Information</h1>
+    <form action="/predictions" method="post">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="blood_pressure">Blood Pressure</label>
+        <input type="number" id="blood_pressure" name="blood_pressure" required>
+
+        <label for="specific_gravity">Specific Gravity</label>
+        <input type="number" id="specific_gravity" name="specific_gravity" step="0.01" required>
+
+        <label for="albumin">Albumin</label>
+        <input type="number" id="albumin" name="albumin" required>
+
+        <label for="sugar">Sugar</label>
+        <input type="number" id="sugar" name="sugar" required>
+
+        <label for="red_blood_cells">Red Blood Cells</label>
+        <select id="red_blood_cells" name="red_blood_cells" required>
+            <option value="normal">Normal</option>
+            <option value="abnormal">Abnormal</option>
+        </select>
+
+        <label for="pus_cell">Pus Cell</label>
+        <select id="pus_cell" name="pus_cell" required>
+            <option value="normal">Normal</option>
+            <option value="abnormal">Abnormal</option>
+        </select>
+
+        <label for="pus_cell_clumps">Pus Cell Clumps</label>
+        <select id="pus_cell_clumps" name="pus_cell_clumps" required>
+            <option value="present">Present</option>
+            <option value="not_present">Not Present</option>
+        </select>
+
+        <label for="bacteria">Bacteria</label>
+        <select id="bacteria" name="bacteria" required>
+            <option value="present">Present</option>
+            <option value="not_present">Not Present</option>
+        </select>
+
+        <label for="blood_glucose_random">Blood Glucose Random</label>
+        <input type="number" id="blood_glucose_random" name="blood_glucose_random" required>
+
+        <label for="blood_urea">Blood Urea</label>
+        <input type="number" id="blood_urea" name="blood_urea" required>
+
+        <label for="serum_creatinine">Serum Creatinine</label>
+        <input type="number" id="serum_creatinine" name="serum_creatinine" step="0.01" required>
+
+        <label for="sodium">Sodium</label>
+        <input type="number" id="sodium" name="sodium" required>
+
+        <label for="potassium">Potassium</label>
+        <input type="number" id="potassium" name="potassium" step="0.01" required>
+
+        <label for="haemoglobin">Haemoglobin</label>
+        <input type="number" id="haemoglobin" name="haemoglobin" step="0.1" required>
+
+        <label for="packed_cell_volume">Packed Cell Volume</label>
+        <input type="number" id="packed_cell_volume" name="packed_cell_volume" required>
+
+        <label for="white_blood_cell_count">White Blood Cell Count</label>
+        <input type="number" id="white_blood_cell_count" name="white_blood_cell_count" required>
+
+        <label for="red_blood_cell_count">Red Blood Cell Count</label>
+        <input type="number" id="red_blood_cell_count" name="red_blood_cell_count" step="0.01" required>
+
+        <label for="hypertension">Hypertension</label>
+        <select id="hypertension" name="hypertension" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="diabetes_mellitus">Diabetes Mellitus</label>
+        <select id="diabetes_mellitus" name="diabetes_mellitus" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="coronary_artery_disease">Coronary Artery Disease</label>
+        <select id="coronary_artery_disease" name="coronary_artery_disease" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="appetite">Appetite</label>
+        <select id="appetite" name="appetite" required>
+            <option value="good">Good</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <label for="peda_edema">Pedal Edema</label>
+        <select id="peda_edema" name="peda_edema" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="aanemia">Anaemia</label>
+        <select id="aanemia" name="aanemia" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
