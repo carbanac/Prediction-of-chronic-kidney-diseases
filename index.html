@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKD Prediction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 20px;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #ff4b2b, #ff416c);
+            transform: translateY(-2px);
+        }
+
+        .facts {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .fact {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .fact:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to CKD Prediction</h1>
+        <p>Chronic Kidney Disease (CKD) is a serious condition where the kidneys are damaged and can't filter blood the way they should. This can cause waste to build up in your body and lead to other health problems like heart disease, stroke, and early death. Early detection and treatment can help prevent the progression of kidney disease and improve your quality of life.</p>
+        <a href="{{ url_for('predictions') }}" class="btn">Get a Prediction</a>
+        
+        <div class="facts">
+            <h2>Facts About Kidney Disease</h2>
+            <div class="fact">1. CKD often has no symptoms in its early stages and can go unnoticed until it is quite advanced.</div>
+            <div class="fact">2. High blood pressure and diabetes are the two main causes of CKD.</div>
+            <div class="fact">3. Early detection can help manage the disease and prevent serious complications.</div>
+            <div class="fact">4. A healthy diet and lifestyle can significantly reduce the risk of developing CKD.</div>
+            <div class="fact">5. Regular check-ups with your doctor are crucial for early diagnosis and management of CKD.</div>
+        </div>
+    </div>
+</body>
+</html>
