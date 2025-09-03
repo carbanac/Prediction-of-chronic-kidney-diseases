@@ -1,0 +1,14 @@
+Ignore Python specific files
+*.pyc
+pycache/
+venv/
+env/
+
+Ignore data science and project files
+*.ipynb
+*.csv
+.ipynb_checkpoints/
+
+Ignore documentation and configuration
+README.md
+docs/
